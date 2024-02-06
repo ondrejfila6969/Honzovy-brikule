@@ -1,0 +1,34 @@
+* {
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: customFont;
+    src: url("./font/joystix\ monospace.otf");
+}
+body {
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startGame {
+    background-color: white;
+    padding-top: 10px;
+    margin-top: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 350px;
+    height: 125px;
+    border: 10px black;
+    border-radius: 30px;
+    border-style: double;
+    cursor: pointer;
+}
+#startGame h2 {
+    font-family: customFont;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
