@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    user-select: none;
 }
 
 @font-face {
@@ -8,7 +9,7 @@
 }
 body {
     text-align: center;
-    background-image: url();
+    background-image: url("/res/img/programmingBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,4 +32,37 @@ body {
     font-size: 40px;
     font-weight: bold;
     color: black;
+}
+
+#prices{
+    margin-top: -10px;
+    margin-right: -5px;
+    background-color: black;
+    height: 950px;
+    width: 320px;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#prices h3 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+#prices div:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+#q5 h3 {
+    color: red;
+}
+
+#q10 h3 {
+    color: yellow;
+}
+
+#q15 h3 {
+    color: lime;
 }
