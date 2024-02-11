@@ -28,7 +28,6 @@ body {
     cursor: pointer;
 }
 #startGame h2 {
-    font-family: customFont;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -36,7 +35,7 @@ body {
 
 #prices{
     margin-top: -10px;
-    margin-right: -5px;
+    margin-right: -8px;
     background-color: black;
     height: 950px;
     width: 320px;
@@ -50,6 +49,11 @@ body {
     padding-bottom: 6px;
 }
 
+
+#prices h3:hover {
+    background-color: orange;
+    cursor: pointer;
+}
 
 #prices div:hover {
     background-color: orange;
@@ -65,4 +69,58 @@ body {
 
 #q15 h3 {
     color: lime;
+}
+
+#main {
+    font-family: customFont;
+}
+
+#mainQuestion {
+    border: 3px solid rgb(0, 110, 255);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 36%;
+    width: 1750px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-family: customFont;
+}
+#questionTitle {
+    font-size: 23px;
+}
+#options {
+    width: 100%;
+}
+
+#top {
+    width: 100%;
+    display: flex;
+}
+
+#firstOption, #secondOption, #thirdOption, #fourthOption {
+    border: 3px solid rgb(0, 110, 255);
+    height: 50px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    flex-basis: 40%;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 13px;
+}
+
+#firstOption:hover, #secondOption:hover, #thirdOption:hover, #fourthOption:hover {
+    cursor: pointer;
+}
+ 
+#firstOption, #thirdOption {
+    margin-left: 50px;
+}
+#secondOption, #fourthOption {
+    margin-left: 200px;
+}
+#bottom {
+    width: 100%;
+    display: flex;
 }
