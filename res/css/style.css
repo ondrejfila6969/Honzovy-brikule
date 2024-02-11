@@ -7,6 +7,7 @@
     font-family: customFont;
     src: url("./font/joystix\ monospace.otf");
 }
+
 body {
     text-align: center;
     background-image: url("/res/img/programmingBackground.jpg");
@@ -123,4 +124,10 @@ body {
 #bottom {
     width: 100%;
     display: flex;
+}
+
+#lossTitle {
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }

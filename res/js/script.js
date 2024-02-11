@@ -22,37 +22,41 @@ const firstOption = document.getElementById("firstOption");
 const secondOption = document.getElementById("secondOption");
 const thirdOption = document.getElementById("thirdOption");
 const fourthOption = document.getElementById("fourthOption");
+const lossTitle = document.getElementById("lossTitle");
 const audio = new Audio();
-
 
 let totalPoints = 0;
 
 startGame.onclick = () => {
-    audio.src = "./res/audio/honzovoOblibene.mp3";
-    audio.play();
-    firstDisplay.style.display = "none";
-    prices.style.display = "inline";
-    document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
-}
-
-q1.onclick = async () => {
+  audio.src = "./res/audio/honzovoOblibene.mp3";
+  audio.play();
+  firstDisplay.style.display = "none";
+  prices.style.display = "inline";
+  document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
+};
+if(totalPoints === 0) {
+  q1.onclick = async () => {
     // JSON záležitost
     const data = await loadData();
-    questionTitle.innerHTML = `<h2>${data[0].question}</h2>`
-    firstOption.innerHTML = `<h2>${data[0].A}</h2>`
-    secondOption.innerHTML = `<h2>${data[0].B}</h2>`
-    thirdOption.innerHTML = `<h2>${data[0].C}</h2>`
-    fourthOption.innerHTML = `<h2>${data[0].D}</h2>`
-
+    questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
+    firstOption.innerHTML = `<h2>${data[0].A}</h2>`;
+    secondOption.innerHTML = `<h2>${data[0].B}</h2>`;
+    thirdOption.innerHTML = `<h2>${data[0].C}</h2>`;
+    fourthOption.innerHTML = `<h2>${data[0].D}</h2>`;
+  
     // Změna struktury webu
     prices.style.display = "none";
     document.body.style.backgroundImage = "url(./res/img/foto.jpg)";
-    audio.pause();
+    audio.src = "./res/audio/questionTime.mp3";
+    audio.currentTime = 7;
+    audio.play();
     main.style.display = "inline";
-
+  
     // Volba správné odpovědi:
     firstOption.onclick = () => {
-        totalPoints += 10;
+      totalPoints = 10;
+      firstOption.style.backgroundColor = "lime";
+      setTimeout(() => {
         audio.src = "./res/audio/honzovoOblibene.mp3";
         audio.play();
         firstDisplay.style.display = "none";
@@ -60,10 +64,13 @@ q1.onclick = async () => {
         document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
         main.style.display = "none";
         q1.style.color = "aqua";
-    }
-
+      }, 1500);
+    };
+  
     secondOption.onclick = () => {
-        totalPoints = 0;
+      secondOption.style.backgroundColor = "red";
+      setTimeout(() => {
+        lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
         audio.play();
         firstDisplay.style.display = "none";
@@ -72,10 +79,13 @@ q1.onclick = async () => {
         main.style.display = "none";
         q1.style.color = "aqua";
         prices.style.display = "none";
-    }
-
+      }, 1500);
+    };
+  
     thirdOption.onclick = () => {
-        totalPoints = 0;
+      thirdOption.style.backgroundColor = "red";
+      setTimeout(() => {
+        lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
         audio.play();
         firstDisplay.style.display = "none";
@@ -84,10 +94,13 @@ q1.onclick = async () => {
         main.style.display = "none";
         q1.style.color = "aqua";
         prices.style.display = "none";
-    }
-
+      }, 1500);
+    };
+  
     fourthOption.onclick = () => {
-        totalPoints = 0;
+      fourthOption.style.backgroundColor = "red";
+      setTimeout(() => {
+        lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
         audio.play();
         firstDisplay.style.display = "none";
@@ -96,21 +109,21 @@ q1.onclick = async () => {
         main.style.display = "none";
         q1.style.color = "aqua";
         prices.style.display = "none";
-    }
-
+      }, 1500);
+    };
+  };
 }
-
 const loadData = async () => {
-    const file = await fetch("../res/data/data.json");
-    const data = await file.json();
-    return data;
-}
+  const file = await fetch("../res/data/data.json");
+  const data = await file.json();
+  return data;
+};
 
 window.onload = async () => {
-    const data = await loadData();
-    /*
+  const data = await loadData();
+  /*
     for(let i = 0; i < data.length; i++) {
         console.log(data[i].question);
     }
     */
-}
+};
