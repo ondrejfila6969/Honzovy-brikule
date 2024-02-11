@@ -26,7 +26,9 @@ const lossTitle = document.getElementById("lossTitle");
 const audio = new Audio();
 
 let totalPoints = 0;
-
+function success() {
+  console.log("Správná odpověď")
+}
 startGame.onclick = () => {
   audio.src = "./res/audio/honzovoOblibene.mp3";
   audio.play();
@@ -34,8 +36,91 @@ startGame.onclick = () => {
   prices.style.display = "inline";
   document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
 };
-if(totalPoints === 0) {
-  q1.onclick = async () => {
+q1.onclick = async () => {
+  // JSON záležitost
+  const data = await loadData();
+  questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
+  firstOption.innerHTML = `<h2>${data[0].A}</h2>`;
+  secondOption.innerHTML = `<h2>${data[0].B}</h2>`;
+  thirdOption.innerHTML = `<h2>${data[0].C}</h2>`;
+  fourthOption.innerHTML = `<h2>${data[0].D}</h2>`;
+
+  // Změna struktury webu
+  prices.style.display = "none";
+  document.body.style.backgroundImage = "url(./res/img/foto.jpg)";
+  audio.src = "./res/audio/questionTime.mp3";
+  audio.currentTime = 7;
+  audio.play();
+  main.style.display = "inline";
+
+  // Volba správné odpovědi:
+  firstOption.onclick = () => {
+    firstOption.style.backgroundColor = "lime";
+    addPoints();
+    setTimeout(() => {
+      audio.src = "./res/audio/honzovoOblibene.mp3";
+      audio.play();
+      firstDisplay.style.display = "none";
+      prices.style.display = "inline";
+      document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
+      main.style.display = "none";
+      q1.style.color = "aqua";
+    }, 1500);
+  };
+
+  secondOption.onclick = () => {
+    secondOption.style.backgroundColor = "red";
+    setTimeout(() => {
+      lossTitle.style.display = "inline";
+      audio.src = "./res/audio/loss.mp3";
+      audio.play();
+      firstDisplay.style.display = "none";
+      prices.style.display = "inline";
+      document.body.style.backgroundImage = "url(./res/img/pepegas.PNG)";
+      main.style.display = "none";
+      q1.style.color = "aqua";
+      prices.style.display = "none";
+    }, 1500);
+  };
+
+  thirdOption.onclick = () => {
+    thirdOption.style.backgroundColor = "red";
+    setTimeout(() => {
+      lossTitle.style.display = "inline";
+      audio.src = "./res/audio/loss.mp3";
+      audio.play();
+      firstDisplay.style.display = "none";
+      prices.style.display = "inline";
+      document.body.style.backgroundImage = "url(./res/img/pepegas.PNG)";
+      main.style.display = "none";
+      q1.style.color = "aqua";
+      prices.style.display = "none";
+    }, 1500);
+  };
+
+  fourthOption.onclick = () => {
+    fourthOption.style.backgroundColor = "red";
+    setTimeout(() => {
+      lossTitle.style.display = "inline";
+      audio.src = "./res/audio/loss.mp3";
+      audio.play();
+      firstDisplay.style.display = "none";
+      prices.style.display = "inline";
+      document.body.style.backgroundImage = "url(./res/img/pepegas.PNG)";
+      main.style.display = "none";
+      q1.style.color = "aqua";
+      prices.style.display = "none";
+    }, 1500);
+  };
+};
+
+if(this.success) {
+  q2.onclick = async () => {
+    // Default nastavení
+    firstOption.style.backgroundColor = "black";
+    secondOption.style.backgroundColor = "black";
+    thirdOption.style.backgroundColor = "black";
+    fourthOption.style.backgroundColor = "black";
     // JSON záležitost
     const data = await loadData();
     questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
@@ -54,8 +139,8 @@ if(totalPoints === 0) {
   
     // Volba správné odpovědi:
     firstOption.onclick = () => {
-      totalPoints = 10;
       firstOption.style.backgroundColor = "lime";
+      addPoints();
       setTimeout(() => {
         audio.src = "./res/audio/honzovoOblibene.mp3";
         audio.play();
