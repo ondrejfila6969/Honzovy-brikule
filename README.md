@@ -1,3 +1,5 @@
 # Honzovy brikule
 [Play](https://ondrejfila6969.github.io/Honzovy-brikule/)
-![image](https://github.com/ondrejfila6969/Honzovy-brikule/assets/114986357/f280d746-86b8-4ec1-919e-fc33dae0324b)
+<br>
+<br>
+![image](https://github.com/ondrejfila6969/Honzovy-brikule/assets/114986357/48a438b9-931b-4fa0-88db-57005889c461)
