@@ -8,114 +8,114 @@
   },
 
   {
-    "question": "TOTO JE TEST",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Jak vypadá arrow funkce ?",
+    "A": "===> {}",
+    "B": "[] => ()",
+    "C": "() => {}",
+    "D": "[] == ()"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Jaký je rozdíl mezi let a const ?",
+    "A": "let = konstanta, const = proměnná",
+    "B": "let = funkce, const = třída",
+    "C": "let = proměnná, const = instance",
+    "D": "let = proměnná, const = konstanta"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Jak nadefinujeme pole ?",
+    "A": "let array = {}",
+    "B": "let array = []",
+    "C": "let array = ()",
+    "D": "let array = () => {}"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Co znamená v poli index ?",
+    "A": "Pozice prvku v poli",
+    "B": "Konstanta v poli",
+    "C": "Funkce v poli",
+    "D": "Třída v poli"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Co znamená zápis window.onload = () => {}",
+    "A": "Slouží k ukončení webové stránky",
+    "B": "Jakmile se načte stránka, provede se arrow fce",
+    "C": "Stáhne se nám do počítače nějaký soubor",
+    "D": "Hackneme NASA počítač pomocí HTML xd"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Co znamená v podmínce zápis a === b (konkrétně, co znamená === )",
+    "A": "a je větší nebo rovno než b",
+    "B": "a je různé od b",
+    "C": "a je rovno b",
+    "D": "a je rovno b a mají stejný datový typ"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""
+    "question": "Pomocí kterého klíčového slova nadefinujeme funkci ? (V JavaScriptu :))",
+    "A": "function",
+    "B": "fce",
+    "C": "def",
+    "D": "class"
   },
 
   {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Co je to JSON ? ",
+    "A": "Programovací jazyk",
+    "B": "Síťový protokol",
+    "C": "JavaScriptová objektová notace",
+    "D": "JavaScriptová metoda"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Vysvětlete zápis const ondra = new Human()",
+    "A": "Vytvořili jsme proměnnou",
+    "B": "Vytvořili jsme instanci od třídy Human",
+    "C": "Uložili jsme do konstanty funkci",
+    "D": "Vytvořili jsme novou třídu"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Co znamená zkratka OOP ?",
+    "A": "Ondrovo objektivní programování",
+    "B": "Objektivně obyčejné programování",
+    "C": "Obyčejné objektové programování",
+    "D": "Objektově orientované programování"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Co děláme, když něco importujeme ?",
+    "A": "Vkládáme nějakou část kodu do jiného souboru",
+    "B": "Vytváříme metodu",
+    "C": "Propojujeme javascript s CSS",
+    "D": "Vytváříme instanci"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Jak změníme barvu textu v javascriptu ?",
+    "A": "element.style.backgroundColor",
+    "B": "element.style.overflow",
+    "C": "element.style.color",
+    "D": "element.style.z-index"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Co je to metoda ?",
+    "A": "Funkce, která náleží nějaké třídě nebo objektu",
+    "B": "Funkce, která je samostatná",
+    "C": "Univerzální třída",
+    "D": "Univerzální pole"   
    },
 
    {
-    "question": "",
-    "A": "",
-    "B": "",
-    "C": "",
-    "D": ""   
+    "question": "Jak zapíšeme logický operátor or ? (v JavaScriptu :))",
+    "A": "or",
+    "B": "nebo",
+    "C": "||",
+    "D": "&&"   
    }
 ]

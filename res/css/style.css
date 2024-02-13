@@ -50,14 +50,8 @@ body {
     padding-bottom: 6px;
 }
 
-
-#prices h3:hover {
-    background-color: orange;
-    cursor: pointer;
-}
-
 #prices div:hover {
-    background-color: orange;
+    color: orange;
     cursor: pointer;
 }
 #q5 h3 {
