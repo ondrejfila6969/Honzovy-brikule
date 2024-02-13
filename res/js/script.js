@@ -67,6 +67,7 @@ window.onload = async () => {
 
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -82,6 +83,7 @@ window.onload = async () => {
 
     thirdOption.onclick = () => {
       thirdOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -97,6 +99,7 @@ window.onload = async () => {
 
     fourthOption.onclick = () => {
       fourthOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -405,6 +408,7 @@ window.onload = async () => {
 
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -420,6 +424,7 @@ window.onload = async () => {
 
     thirdOption.onclick = () => {
       thirdOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -435,6 +440,7 @@ window.onload = async () => {
 
     fourthOption.onclick = () => {
       fourthOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -657,6 +663,7 @@ window.onload = async () => {
 
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -672,6 +679,7 @@ window.onload = async () => {
 
     thirdOption.onclick = () => {
       thirdOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -687,6 +695,7 @@ window.onload = async () => {
 
     fourthOption.onclick = () => {
       fourthOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -994,6 +1003,7 @@ window.onload = async () => {
 
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -1009,6 +1019,7 @@ window.onload = async () => {
 
     thirdOption.onclick = () => {
       thirdOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -1024,6 +1035,7 @@ window.onload = async () => {
 
     fourthOption.onclick = () => {
       fourthOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -1162,6 +1174,7 @@ window.onload = async () => {
 
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -1177,6 +1190,7 @@ window.onload = async () => {
 
     thirdOption.onclick = () => {
       thirdOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
@@ -1192,6 +1206,7 @@ window.onload = async () => {
 
     fourthOption.onclick = () => {
       fourthOption.style.backgroundColor = "red";
+      firstOption.style.backgroundColor = "lime";
       setTimeout(() => {
         lossTitle.style.display = "inline";
         audio.src = "./res/audio/loss.mp3";
