@@ -37,7 +37,6 @@ window.onload = async () => {
   // 1. OTÁZKA
 q1.onclick = async () => {
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[0].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[0].B}</h2>`;
@@ -123,7 +122,6 @@ q2.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[1].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[1].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[1].B}</h2>`;
@@ -208,7 +206,6 @@ q3.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[2].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[2].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[2].B}</h2>`;
@@ -293,7 +290,6 @@ q4.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[3].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[3].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[3].B}</h2>`;
@@ -378,7 +374,6 @@ q5.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[4].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[4].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[4].B}</h2>`;
@@ -465,7 +460,6 @@ q6.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[5].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[5].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[5].B}</h2>`;
@@ -550,7 +544,6 @@ q7.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[6].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[6].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[6].B}</h2>`;
@@ -634,7 +627,6 @@ q8.onclick = async () => {
   thirdOption.style.backgroundColor = "black";
   fourthOption.style.backgroundColor = "black";
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[7].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[7].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[7].B}</h2>`;
@@ -720,7 +712,6 @@ q9.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[8].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[8].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[8].B}</h2>`;
@@ -805,7 +796,6 @@ q10.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[9].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[9].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[9].B}</h2>`;
@@ -891,7 +881,6 @@ q11.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[10].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[10].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[10].B}</h2>`;
@@ -975,7 +964,6 @@ q12.onclick = async () => {
   thirdOption.style.backgroundColor = "black";
   fourthOption.style.backgroundColor = "black";
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[11].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[11].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[11].B}</h2>`;
@@ -1061,7 +1049,6 @@ q13.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[12].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[12].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[12].B}</h2>`;
@@ -1145,7 +1132,6 @@ q14.onclick = async () => {
   thirdOption.style.backgroundColor = "black";
   fourthOption.style.backgroundColor = "black";
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[13].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[13].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[13].B}</h2>`;
@@ -1231,7 +1217,6 @@ q15.onclick = async () => {
   fourthOption.style.backgroundColor = "black";
 
   // JSON záležitost
-  const data = await loadData();
   questionTitle.innerHTML = `<h2>${data[14].question}</h2>`;
   firstOption.innerHTML = `<h2>${data[14].A}</h2>`;
   secondOption.innerHTML = `<h2>${data[14].B}</h2>`;
@@ -1311,7 +1296,7 @@ q15.onclick = async () => {
 };
 
 const loadData = async () => {
-  const file = await fetch("../res/data/data.json");
+  const file = await fetch("./res/data/data.json");
   const data = await file.json();
   return data;
 };
