@@ -1310,7 +1310,6 @@ q15.onclick = async () => {
     }, 1500);
   };
 };
-
 const loadData = async () => {
   const file = await fetch("../res/data/data.json");
   const data = await file.json();
@@ -1318,10 +1317,7 @@ const loadData = async () => {
 };
 
 window.onload = async () => {
-  const data = await loadData();
-  /*
-    for(let i = 0; i < data.length; i++) {
-        console.log(data[i].question);
-    }
-    */
+  const file = await fetch("../res/data/data.json");
+  const data = await file.json();
+  return data;
 };
