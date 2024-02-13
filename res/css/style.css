@@ -10,7 +10,7 @@
 
 body {
     text-align: center;
-    background-image: url("/res/img/programmingBackground.jpg");
+    background-image: url("../img/programmingBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
