@@ -96,6 +96,9 @@ window.onload = async () => {
   const data = await loadData();
   // 1. OTÁZKA
   q1.onclick = async () => {
+    // Default nastavení
+    defaultSettings();
+    
     // JSON záležitost
     questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
     firstOption.innerHTML = `<h2>${data[0].A}</h2>`;
