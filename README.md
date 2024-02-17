@@ -3,4 +3,4 @@
 <br>
 <br>
 
-![gif](https://github.com/ondrejfila6969/Honzovy-brikule/assets/114986357/c43a0283-98f5-4780-a9c4-df913cf67bb9)
+![gif](https://github.com/ondrejfila6969/Honzovy-brikule/assets/114986357/ae89209d-1d38-43bc-b9a5-7a0611cb03b2)
