@@ -45,7 +45,6 @@ startGame.onclick = () => {
   document.body.style.backgroundImage = "url(./res/img/untillTill.jpg)";
 };
 
-
 // Správná odpověď
 function correct(element) {
   setTimeout(() => {
@@ -74,7 +73,7 @@ function incorrect() {
   }, 1500);
 }
 
-// Default nastavené 
+// Default nastavené
 function defaultSettings() {
   firstOption.style.backgroundColor = "black";
   secondOption.style.backgroundColor = "black";
@@ -85,11 +84,43 @@ function defaultSettings() {
 // Změna struktury webu - začátek hry
 function gameStarts() {
   prices.style.display = "none";
-    document.body.style.backgroundImage = "url(./res/img/foto.jpg)";
-    audio.src = "./res/audio/questionTime.mp3";
-    audio.currentTime = 7;
-    audio.play();
-    main.style.display = "inline";
+  document.body.style.backgroundImage = "url(./res/img/foto.jpg)";
+  main.style.display = "inline";
+}
+
+// Hudba
+// Otázky 0 - 5
+function firstAudio() {
+  audio.src = "./res/audio/questionTime.mp3";
+  audio.currentTime = 7;
+  audio.play();
+}
+
+// Otázky 6 - 10
+function secondAudio() {
+  audio.src = "./res/audio/questionTime2.mp3";
+  audio.currentTime = 17;
+  audio.play();
+}
+
+// Otázky 11 - 15
+function thirdAudio() {
+  audio.src = "./res/audio/questionTime3.mp3";
+  audio.currentTime = 0;
+  audio.play();
+
+  // Smyčka
+  
+  let loop = 0;
+  setInterval(() => {
+    loop++;
+    console.log(loop);
+    if(loop == 28) {
+      audio.currentTime = 0;
+      audio.play();
+      loop = 0;
+    }
+  }, 1000);
 }
 
 window.onload = async () => {
@@ -98,7 +129,7 @@ window.onload = async () => {
   q1.onclick = async () => {
     // Default nastavení
     defaultSettings();
-    
+
     // JSON záležitost
     questionTitle.innerHTML = `<h2>${data[0].question}</h2>`;
     firstOption.innerHTML = `<h2>${data[0].A}</h2>`;
@@ -108,6 +139,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    firstAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -149,6 +181,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    firstAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -190,6 +223,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    firstAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -231,6 +265,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    firstAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -272,6 +307,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    firstAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -315,6 +351,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    secondAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -326,7 +363,7 @@ window.onload = async () => {
     secondOption.onclick = () => {
       secondOption.style.backgroundColor = "lime";
       totalLevels++;
-      correct(q6)
+      correct(q6);
     };
 
     thirdOption.onclick = () => {
@@ -356,6 +393,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    secondAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -397,6 +435,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    secondAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -438,6 +477,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    secondAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -479,6 +519,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    secondAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -505,7 +546,7 @@ window.onload = async () => {
       fourthOption.style.backgroundColor = "red";
       secondOption.style.backgroundColor = "lime";
       incorrect();
-    }
+    };
   };
 
   // 11. OTÁZKA
@@ -522,6 +563,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    thirdAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -604,6 +646,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    thirdAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -645,6 +688,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    thirdAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
@@ -686,6 +730,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    thirdAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
