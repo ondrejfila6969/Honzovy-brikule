@@ -106,9 +106,7 @@ function secondAudio() {
 // Otázky 11 - 15
 function thirdAudio() {
   audio.src = "./res/audio/questionTime3.mp3";
-  audio.currentTime = 0;
   audio.play();
-
   // Smyčka
   
   let loop = 0;
@@ -605,6 +603,7 @@ window.onload = async () => {
 
     // Změna struktury webu
     gameStarts();
+    thirdAudio();
 
     // Volba správné odpovědi:
     firstOption.onclick = () => {
